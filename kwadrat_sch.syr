@@ -1,0 +1,507 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: kwadrat_sch.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "kwadrat_sch.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "kwadrat_sch"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : kwadrat_sch
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd" in Library work.
+Entity <kwadrat> compiled.
+Entity <kwadrat> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" in Library work.
+Architecture behavioral of Entity mysz is up to date.
+Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.vhf" in Library work.
+Architecture behavioral of Entity kwadrat_sch is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <kwadrat_sch> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <kwadrat> in library <work> (architecture <behavioral>).
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd" line 48: Default value is ignored for signal <c_pos_x>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd" line 49: Default value is ignored for signal <c_pos_y>.
+
+Analyzing hierarchy for entity <mysz> in library <work> (architecture <behavioral>).
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" line 48: Default value is ignored for signal <status>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" line 49: Default value is ignored for signal <dx>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" line 50: Default value is ignored for signal <dy>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <kwadrat_sch> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.vhf" line 93: Instantiating black box module <PS2_Mouse>.
+Entity <kwadrat_sch> analyzed. Unit <kwadrat_sch> generated.
+
+Analyzing Entity <kwadrat> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd" line 48: Default value is ignored for signal <c_pos_x>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd" line 49: Default value is ignored for signal <c_pos_y>.
+WARNING:Xst:819 - "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd" line 80: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <c_pos_y>, <c_pos_x>
+Entity <kwadrat> analyzed. Unit <kwadrat> generated.
+
+Analyzing Entity <mysz> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" line 48: Default value is ignored for signal <status>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" line 49: Default value is ignored for signal <dx>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd" line 50: Default value is ignored for signal <dy>.
+Entity <mysz> analyzed. Unit <mysz> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <kwadrat>.
+    Related source file is "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <h_sync>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 11-bit up counter for signal <h_counter>.
+    Found 11-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 86.
+    Found 10-bit up counter for signal <v_counter>.
+    Found 10-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 82.
+    Found 11-bit adder for signal <vga_b$add0000> created at line 96.
+    Found 11-bit adder for signal <vga_b$add0001> created at line 96.
+    Found 10-bit comparator greater for signal <vga_b$cmp_gt0000> created at line 93.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0001> created at line 93.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0002> created at line 96.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0003> created at line 96.
+    Found 10-bit comparator less for signal <vga_b$cmp_lt0000> created at line 93.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0001> created at line 93.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0002> created at line 96.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0003> created at line 96.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  10 Comparator(s).
+Unit <kwadrat> synthesized.
+
+
+Synthesizing Unit <mysz>.
+    Related source file is "C:/Users/lab/Desktop/projekt1uciswv1.2/mysz.vhd".
+WARNING:Xst:647 - Input <B1_Status> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <status> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 11-bit register for signal <x_c>.
+    Found 11-bit adder for signal <x_c$addsub0000> created at line 71.
+    Found 11-bit comparator greater for signal <x_c$cmp_gt0000> created at line 68.
+    Found 11-bit register for signal <y_c>.
+    Found 11-bit subtractor for signal <y_c$addsub0000> created at line 76.
+    Found 11-bit comparator greater for signal <y_c$cmp_gt0000> created at line 73.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <mysz> synthesized.
+
+
+Synthesizing Unit <kwadrat_sch>.
+    Related source file is "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.vhf".
+Unit <kwadrat_sch> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 11-bit adder                                          : 3
+ 11-bit subtractor                                     : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 2
+ 11-bit register                                       : 2
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 12
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator greater                             : 1
+ 10-bit comparator less                                : 1
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator greater                             : 5
+ 11-bit comparator less                                : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <PS2_Mouse.ngc>.
+Loading core <PS2_Mouse> for timing and area information for instance <XLXI_2>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 11-bit adder                                          : 3
+ 11-bit subtractor                                     : 1
+# Counters                                             : 2
+ 10-bit up counter                                     : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 22
+ Flip-Flops                                            : 22
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 12
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator greater                             : 1
+ 10-bit comparator less                                : 1
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator greater                             : 5
+ 11-bit comparator less                                : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <kwadrat_sch> ...
+
+Optimizing unit <kwadrat> ...
+
+Optimizing unit <mysz> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block kwadrat_sch, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 43
+ Flip-Flops                                            : 43
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : kwadrat_sch.ngr
+Top Level Output File Name         : kwadrat_sch
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 423
+#      GND                         : 2
+#      INV                         : 20
+#      LUT1                        : 44
+#      LUT2                        : 104
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 13
+#      LUT4                        : 31
+#      LUT4_D                      : 7
+#      LUT4_L                      : 2
+#      MUXCY                       : 125
+#      MUXF5                       : 2
+#      VCC                         : 2
+#      XORCY                       : 69
+# FlipFlops/Latches                : 123
+#      FD                          : 11
+#      FDE                         : 59
+#      FDR                         : 15
+#      FDRE                        : 26
+#      FDRS                        : 3
+#      FDRSE                       : 1
+#      FDS                         : 1
+#      FDSE                        : 6
+#      LD                          : 1
+# Shift Registers                  : 1
+#      SRL16E                      : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      IOBUF                       : 2
+#      OBUF                        : 6
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      141  out of   4656     3%  
+ Number of Slice Flip Flops:            122  out of   9312     1%  
+ Number of 4 input LUTs:                224  out of   9312     2%  
+    Number used as logic:               223
+    Number used as Shift registers:       1
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 123   |
+VGA_VSYNC_OBUF(XLXI_1/v_sync48:O)  | NONE(*)(XLXI_1/h_sync) | 1     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.254ns (Maximum Frequency: 159.898MHz)
+   Minimum input arrival time before clock: 3.011ns
+   Maximum output required time after clock: 11.631ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.254ns (frequency: 159.898MHz)
+  Total number of paths / destination ports: 1702 / 255
+-------------------------------------------------------------------------
+Delay:               6.254ns (Levels of Logic = 3)
+  Source:            XLXI_1/h_counter_0 (FF)
+  Destination:       XLXI_1/v_counter_9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_1/h_counter_0 to XLXI_1/v_counter_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  XLXI_1/h_counter_0 (XLXI_1/h_counter_0)
+     LUT3:I0->O            2   0.704   0.526  XLXI_1/v_counter_and000014 (XLXI_1/v_counter_and000014)
+     LUT3:I1->O            1   0.704   0.424  XLXI_1/v_counter_and0000118 (XLXI_1/h_counter_cmp_eq0000)
+     LUT4:I3->O           10   0.704   0.882  XLXI_1/v_counter_and000046 (XLXI_1/v_counter_and0000)
+     FDRE:R                    0.911          XLXI_1/v_counter_0
+    ----------------------------------------
+    Total                      6.254ns (3.614ns logic, 2.640ns route)
+                                       (57.8% logic, 42.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 10 / 10
+-------------------------------------------------------------------------
+Offset:              3.011ns (Levels of Logic = 2)
+  Source:            btn_north (PAD)
+  Destination:       XLXI_2/State_FSM_FFd1 (FF)
+  Destination Clock: clk rising
+
+  Data Path: btn_north to XLXI_2/State_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.218   0.882  btn_north_IBUF (btn_north_IBUF)
+     begin scope: 'XLXI_2'
+     FDR:R                     0.911          State_FSM_FFd1
+    ----------------------------------------
+    Total                      3.011ns (2.129ns logic, 0.882ns route)
+                                       (70.7% logic, 29.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 554 / 7
+-------------------------------------------------------------------------
+Offset:              11.631ns (Levels of Logic = 7)
+  Source:            XLXI_1/v_counter_0 (FF)
+  Destination:       VGA_B (PAD)
+  Source Clock:      clk rising
+
+  Data Path: XLXI_1/v_counter_0 to VGA_B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.591   0.844  XLXI_1/v_counter_0 (XLXI_1/v_counter_0)
+     LUT4:I0->O            1   0.704   0.455  XLXI_1/vga_b_or000099_SW0 (N6)
+     LUT4:I2->O            1   0.704   0.424  XLXI_1/vga_b_or000099 (XLXI_1/vga_b_or000099)
+     LUT4:I3->O            1   0.704   0.424  XLXI_1/vga_b_or0000135_SW0_SW0 (N10)
+     LUT4:I3->O            2   0.704   0.451  XLXI_1/vga_b_or0000135_SW0 (N8)
+     LUT4:I3->O            1   0.704   0.499  XLXI_1/vga_b_or0000135 (XLXI_1/vga_b_or0000)
+     LUT4:I1->O            2   0.704   0.447  XLXI_1/vga_g (VGA_B_OBUF)
+     OBUF:I->O                 3.272          VGA_B_OBUF (VGA_B)
+    ----------------------------------------
+    Total                     11.631ns (8.087ns logic, 3.544ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_VSYNC_OBUF'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            XLXI_1/h_sync (LATCH)
+  Destination:       VGA_HSYNC (PAD)
+  Source Clock:      VGA_VSYNC_OBUF falling
+
+  Data Path: XLXI_1/h_sync to VGA_HSYNC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.676   0.420  XLXI_1/h_sync (XLXI_1/h_sync)
+     OBUF:I->O                 3.272          VGA_HSYNC_OBUF (VGA_HSYNC)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.81 secs
+ 
+--> 
+
+Total memory usage is 4532200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   17 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

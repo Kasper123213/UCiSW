@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/lab/Desktop/projekt1ucisw/kwadrat_test_isim_beh.exe -prj C:/Users/lab/Desktop/projekt1ucisw/kwadrat_test_beh.prj kwadrat_test 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.vhd" into library work
+Parsing VHDL file "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package vcomponents
+Compiling architecture behavioral of entity kwadrat [kwadrat_default]
+Compiling architecture behavior of entity kwadrat_test
+Time Resolution for simulation is 1ps.
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/lab/Desktop/projekt1ucisw/kwadrat_test_isim_beh.exe
+Fuse Memory Usage: 45964 KB
+Fuse CPU Usage: 374 ms

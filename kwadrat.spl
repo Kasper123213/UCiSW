@@ -1,0 +1,11 @@
+[Inputs]
+clk
+=pos_x[10:0]=
+=pos_y[10:0]=
+[Outputs]
+vga_r
+vga_g
+vga_b
+vga_hsync
+vga_vsync
+[BiDir]

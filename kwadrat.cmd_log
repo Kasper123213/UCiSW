@@ -1,0 +1,39 @@
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/projekt1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/projekt1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/projekt1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/projekt1/kwadrat.sym 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat.syr" 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 

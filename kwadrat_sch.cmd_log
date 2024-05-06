@@ -1,0 +1,140 @@
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+sch2sym -intstyle ise -family spartan3e -refsym kwadrat_sch C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.sch C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.sym 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1ucisw/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl kwadrat_sch_drc.vhf -w C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.sch 
+sch2sym -intstyle ise -family spartan3e -refsym kwadrat_sch C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.sch C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.sym 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 
+xst -intstyle ise -ifn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.xst" -ofn "C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc GenIO.ucf -p xc3s500e-fg320-4 kwadrat_sch.ngc kwadrat_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o kwadrat_sch_map.ncd kwadrat_sch.ngd kwadrat_sch.pcf 
+par -w -intstyle ise -ol high -t 1 kwadrat_sch_map.ncd kwadrat_sch.ncd kwadrat_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml kwadrat_sch.twx kwadrat_sch.ncd -o kwadrat_sch.twr kwadrat_sch.pcf -ucf GenIO.ucf 
+bitgen -intstyle ise -f kwadrat_sch.ut kwadrat_sch.ncd 

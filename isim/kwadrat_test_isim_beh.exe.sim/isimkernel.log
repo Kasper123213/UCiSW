@@ -1,0 +1,10 @@
+Command line:
+   kwadrat_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51280
+
+Thu Apr 11 10:20:21 2024
+
+
+ Elaboration Time: 0.03125 sec
