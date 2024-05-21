@@ -9,23 +9,23 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Tue Apr 30 12:06:24 2024
+Mapped Date    : Tue May 21 13:05:37 2024
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    2
 Logic Utilization:
-  Number of Slice Flip Flops:           114 out of   9,312    1%
-  Number of 4 input LUTs:               176 out of   9,312    1%
+  Number of Slice Flip Flops:           306 out of   9,312    3%
+  Number of 4 input LUTs:               771 out of   9,312    8%
 Logic Distribution:
-  Number of occupied Slices:            150 out of   4,656    3%
-    Number of Slices containing only related logic:     150 out of     150 100%
-    Number of Slices containing unrelated logic:          0 out of     150   0%
+  Number of occupied Slices:            510 out of   4,656   10%
+    Number of Slices containing only related logic:     510 out of     510 100%
+    Number of Slices containing unrelated logic:          0 out of     510   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         220 out of   9,312    2%
-    Number used as logic:               175
-    Number used as a route-thru:         44
+  Total Number of 4 input LUTs:         926 out of   9,312    9%
+    Number used as logic:               770
+    Number used as a route-thru:        155
     Number used as Shift registers:       1
 
   The Slice Logic Distribution report is not meaningful if the design is
@@ -35,9 +35,9 @@ Logic Distribution:
     IOB Latches:                          1
   Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                2.67
+Average Fanout of Non-Clock Nets:                2.42
 
-Peak Memory Usage:  4405 MB
+Peak Memory Usage:  4421 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -91,10 +91,10 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net VGA_VSYNC_OBUF is sourced
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network N15 has no load.
+INFO:LIT:243 - Logical network N35 has no load.
 INFO:LIT:395 - The above info message is repeated 9 more times for the following
    (max. 5 shown):
-   N16,
+   N36,
    XLXI_2/B1_Status<7>,
    XLXI_2/B1_Status<6>,
    XLXI_2/B1_Status<5>,

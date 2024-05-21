@@ -7,18 +7,7 @@ library UNISIM;
 use UNISIM.VComponents.all;
 
 entity kwadrat is
-	Port ( --ball_x : in STD_LOGIC;
-		--ball_y : in STD_LOGIC;
-		--ball_radius : in STD_LOGIC;
-		--ball_r : in STD_LOGIC;
-		--ball_g : in STD_LOGIC;
-		--ball_b : in STD_LOGIC;
-		
-		--racket_w : in STD_LOGIC;
-		--racket_h : in STD_LOGIC;
-		--racket_x_pos: in STD_LOGIC;
-		--racket_y_pos : in STD_LOGIC;
-		
+	Port (
 		clk : in STD_LOGIC;
 		pos_x : in std_logic_vector(10 downto 0);
 		pos_y : in std_logic_vector(10 downto 0);
@@ -52,6 +41,21 @@ architecture Behavioral of kwadrat is
     signal v_counter : integer range 0 to 666 := 0;
     signal h_sync : STD_LOGIC := '0';
     signal v_sync : STD_LOGIC := '0';
+	 
+	 signal p_width : integer := 40;
+	 signal p1_v : integer := 1;
+	 signal p1_height : integer := 80;
+	 signal p1_x : integer := 200;
+	 signal p1_y : integer := 300;
+	 signal p2_v : integer := 2;
+	 signal p2_height : integer := 80;
+	 signal p2_x : integer := 400;
+	 signal p2_y : integer := 300;
+	 signal p3_v : integer := 3;
+	 signal p3_height : integer := 80;
+	 signal p3_x : integer := 600;
+	 signal p3_y : integer := 300;
+
 
 begin
 
@@ -77,6 +81,9 @@ process(clk)
     vga_hsync <= h_sync;
     vga_vsync <= v_sync;
 
+
+
+
     process(h_counter, v_counter)
     begin
         if v_counter < 0 or v_counter >= V_FRONT_PORCH + V_ACTIVE + V_BACK_PORCH then
@@ -90,27 +97,76 @@ process(clk)
             end if;
         end if;
 		  
-        if v_counter > V_ACTIVE or v_counter < V_BACK_PORCH or h_counter > H_ACTIVE or h_counter < H_BACK_PORCH then
+        if v_counter > V_ACTIVE or v_counter < V_BACK_PORCH or h_counter > H_ACTIVE or h_counter < H_BACK_PORCH then -- myszka
 		      vga_r <= '0';
             vga_g <= '0';
             vga_b <= '0';
 
-			
-        
-				elsif v_counter > c_pos_y and v_counter < c_height + c_pos_y and h_counter > c_pos_x  and h_counter < c_width + c_pos_x then
- 
+				elsif v_counter > 560 and v_counter < 580 and h_counter > 770  and h_counter < 790 then -- punkt zwyciestwa
+						vga_r <='0'; 
+						vga_g <='1'; 
+						vga_b <='0'; 
+						
+				elsif v_counter > p1_y - p1_height and v_counter < p1_y + p1_height and h_counter > p1_x - p_width  and h_counter < p1_x + p_width then -- przeszkoda 1
+						vga_r <='0'; 
+						vga_g <='0'; 
+						vga_b <='1'; 
+				elsif v_counter > p2_y - p2_height and v_counter < p2_y + p2_height and h_counter > p2_x - p_width  and h_counter < p2_x + p_width then -- przeszkoda 2
+						vga_r <='0'; 
+						vga_g <='0'; 
+						vga_b <='1'; 
+				elsif v_counter > p3_y - p3_height and v_counter < p3_y + p3_height and h_counter > p3_x - p_width  and h_counter < p3_x + p_width then -- przeszkoda 3
+						vga_r <='0'; 
+						vga_g <='0'; 
+						vga_b <='1'; 						
+				elsif v_counter > c_pos_y and v_counter < c_height + c_pos_y and h_counter > c_pos_x  and h_counter < c_width + c_pos_x then -- czarny
 						vga_r <='1'; 
 						vga_g <='1'; 
 						vga_b <='1'; 
-				else
+				else ----------------------------------------------------------------------------------------------------------------------------- tlo
 
 						vga_r <= '1';
 						vga_g <= '0';
 						vga_b <= '0';
 				end if;
-			
+				
+
     end process;
 
-
+	process(clk, h_counter, v_counter)
+	begin
+			if rising_edge(clk) then
+				if h_counter = 800 and v_counter  = 600 then
+					p1_height <= p1_height + p1_v;
+					p2_height <= p2_height + p2_v;	
+					p3_height <= p3_height + p3_v;						
+				end if;
+				
+			if p1_height > 300 then
+				p1_v <= p1_v * (-1);
+				p1_height <= 300;
+			end if;				
+			if p2_height > 300 then				
+				p2_v <= p2_v * (-1);
+				p2_height <= 300;
+			end if;				
+			if p3_height > 300 then				
+				p3_v <= p3_v * (-1);
+				p3_height <= 300;
+			end if;				
+			if p1_height < 80 then
+				p1_v <= p1_v * (-1);
+				p1_height <= 80;
+			end if;				
+			if p2_height < 80 then				
+				p2_v <= p2_v * (-1);
+				p2_height <= 80;
+			end if;				
+			if p3_height < 80 then				
+				p3_v <= p3_v * (-1);
+				p3_height <= 80;
+			end if;			
+		end if;
+	end process;
 end Behavioral;
 
