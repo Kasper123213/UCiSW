@@ -65,20 +65,27 @@ begin
 process(clk, DataRdy, B1_Status, B2_X, B3_Y)
     begin
 	 if rising_edge(clk) and DataRdy = '1' then		
-	if x_c > 780 then
-			x_c <= "01100001100";
-	elsif x_c < 60 then
-			x_c <= "00000111100";
-		else 
-			x_c <= x_c + dx;
-		end if;
-	if y_c > 580 then
-			y_c <= "01001000100";
-	elsif y_c < 20 then
-			y_c <= "00000010100";
-		else 
-			y_c <= y_c - dy;
-		end if;	 end if;
+	 if x_c > 780 or x_c < 60 or y_c > 580 or y_c < 20 then
+		x_c <= "00000011110";
+		y_c <= "00100011110";
+	else 
+		x_c <= x_c + dx;
+		y_c <= y_c - dy;
+	 end if;
+	--if x_c > 780 then
+	--		x_c <= "01100001100";
+	--elsif x_c < 60 then
+	--		x_c <= "00000111100";
+	--	else 
+	--		x_c <= x_c + dx;
+	--	end if;
+	--if y_c > 580 then
+	--		y_c <= "01001000100";
+	--elsif y_c < 20 then
+	--		y_c <= "00000010100";
+	--	else 
+	--		y_c <= y_c - dy;
+	--	end if;	 end if;
 			
  end process;
  

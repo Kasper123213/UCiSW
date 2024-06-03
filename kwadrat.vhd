@@ -16,7 +16,9 @@ entity kwadrat is
 		vga_g : out STD_LOGIC;
 		vga_b : out STD_LOGIC;
 		vga_hsync : out STD_LOGIC;
-		vga_vsync : out STD_LOGIC
+		vga_vsync : out STD_LOGIC;
+		
+		mReset : out STD_LOGIC
 		);
 end kwadrat;
 
@@ -55,12 +57,16 @@ architecture Behavioral of kwadrat is
 	 signal p3_height : integer := 80;
 	 signal p3_x : integer := 600;
 	 signal p3_y : integer := 300;
-
+	 
+	 
+	 signal ifReset : STD_LOGIC := '0';
 
 begin
 
 	 c_pos_x <= signed(pos_x);
 	 c_pos_y <= signed(pos_y);
+	 
+	 mReset <= ifReset;
 
 process(clk)
     begin
@@ -142,31 +148,36 @@ process(clk)
 					p3_height <= p3_height + p3_v;						
 				end if;
 				
-			if p1_height > 300 then
-				p1_v <= p1_v * (-1);
-				p1_height <= 300;
-			end if;				
-			if p2_height > 300 then				
-				p2_v <= p2_v * (-1);
-				p2_height <= 300;
-			end if;				
-			if p3_height > 300 then				
-				p3_v <= p3_v * (-1);
-				p3_height <= 300;
-			end if;				
-			if p1_height < 80 then
-				p1_v <= p1_v * (-1);
-				p1_height <= 80;
-			end if;				
-			if p2_height < 80 then				
-				p2_v <= p2_v * (-1);
-				p2_height <= 80;
-			end if;				
-			if p3_height < 80 then				
-				p3_v <= p3_v * (-1);
-				p3_height <= 80;
-			end if;			
-		end if;
+				if p1_height > 300 then
+					p1_v <= p1_v * (-1);
+					p1_height <= 300;
+				end if;				
+				if p2_height > 300 then				
+					p2_v <= p2_v * (-1);
+					p2_height <= 300;
+				end if;				
+				if p3_height > 300 then				
+					p3_v <= p3_v * (-1);
+					p3_height <= 300;
+				end if;				
+				if p1_height < 80 then
+					p1_v <= p1_v * (-1);
+					p1_height <= 80;
+				end if;				
+				if p2_height < 80 then				
+					p2_v <= p2_v * (-1);
+					p2_height <= 80;
+				end if;				
+				if p3_height < 80 then				
+					p3_v <= p3_v * (-1);
+					p3_height <= 80;
+				end if;			
+			end if;
+	end process;
+	
+	process(clk, c_pos_x, c_pos_y, p1_height, p1_y, p2_x, p2_y, p3_x, p3_y)
+	begin
+	
 	end process;
 end Behavioral;
 
