@@ -60,6 +60,9 @@ architecture Behavioral of kwadrat is
 	 
 	 
 	 signal ifReset : STD_LOGIC := '0';
+	 signal win : STD_LOGIC := '0';
+	 
+	 signal lvl : integer := 0;
 
 begin
 
@@ -104,7 +107,7 @@ process(clk)
         end if;
 		  
         if v_counter > V_ACTIVE or v_counter < V_BACK_PORCH or h_counter > H_ACTIVE or h_counter < H_BACK_PORCH then -- myszka
-		      vga_r <= '0';
+		    vga_r <= '0';
             vga_g <= '0';
             vga_b <= '0';
 
@@ -130,10 +133,24 @@ process(clk)
 						vga_g <='1'; 
 						vga_b <='1'; 
 				else ----------------------------------------------------------------------------------------------------------------------------- tlo
-
-						vga_r <= '1';
-						vga_g <= '0';
-						vga_b <= '0';
+						if lvl=0 then
+							vga_r <= '0';
+							vga_g <= '1';
+							vga_b <= '1';
+						elsif lvl=1 then
+							vga_r <= '1';
+							vga_g <= '1';
+							vga_b <= '0';
+						elsif lvl=2 then
+							vga_r <= '1';
+							vga_g <= '0';
+							vga_b <= '1';
+						else
+							vga_r <= '1';
+							vga_g <= '0';
+							vga_b <= '0';
+						
+						end if;
 				end if;
 				
 
@@ -141,43 +158,95 @@ process(clk)
 
 	process(clk, h_counter, v_counter)
 	begin
-			if rising_edge(clk) then
-				if h_counter = 800 and v_counter  = 600 then
-					p1_height <= p1_height + p1_v;
-					p2_height <= p2_height + p2_v;	
-					p3_height <= p3_height + p3_v;						
+		if rising_edge(clk) then
+			if h_counter = 800 and v_counter  = 600 then
+				p1_height <= p1_height + p1_v;
+				p2_height <= p2_height + p2_v;	
+				p3_height <= p3_height + p3_v;						
+			end if;
+			
+			if p1_height > 300 then
+				p1_v <= p1_v * (-1);
+				p1_height <= 300;
+			end if;				
+			if p2_height > 300 then				
+				p2_v <= p2_v * (-1);
+				p2_height <= 300;
+			end if;				
+			if p3_height > 300 then				
+				p3_v <= p3_v * (-1);
+				p3_height <= 300;
+			end if;				
+			if p1_height < 80 then
+				p1_v <= p1_v * (-1);
+				p1_height <= 80;
+			end if;				
+			if p2_height < 80 then				
+				p2_v <= p2_v * (-1);
+				p2_height <= 80;
+			end if;				
+			if p3_height < 80 then				
+				p3_v <= p3_v * (-1);
+				p3_height <= 80;
+			end if;			
+		end if;
+	end process;
+	
+	process(clk, c_pos_x, c_pos_y, p1_height, p2_height, p3_height) --reset pozycji po zderzeniu z przeszkodą
+	begin
+		if rising_edge(clk) then
+			if c_pos_x+10 >= p1_x-20 and c_pos_x-10 <= p1_x+20 then
+				if c_pos_y+10 >= p1_y-p1_height and c_pos_y-10 <= p1_y+p1_height then
+					ifReset <= '1';
 				end if;
 				
-				if p1_height > 300 then
-					p1_v <= p1_v * (-1);
-					p1_height <= 300;
-				end if;				
-				if p2_height > 300 then				
-					p2_v <= p2_v * (-1);
-					p2_height <= 300;
-				end if;				
-				if p3_height > 300 then				
-					p3_v <= p3_v * (-1);
-					p3_height <= 300;
-				end if;				
-				if p1_height < 80 then
-					p1_v <= p1_v * (-1);
+			elsif c_pos_x+10 >= p2_x-20 and c_pos_x-10 <= p2_x+20 then
+				if c_pos_y+10 >= p2_y-p2_height and c_pos_y-10 <= p2_y+p2_height then
+					ifReset <= '1';
+				end if;
+			elsif c_pos_x+10 >= p3_x-20 and c_pos_x-10 <= p3_x+20 then
+				if c_pos_y+10 >= p3_y-p3_height and c_pos_y-10 <= p3_y+p3_height then
+					ifReset <= '1';
+				end if;
+			elsif c_pos_x+10 >= 770 and c_pos_x-10 <= 790 then	--wygrana
+				if c_pos_y+10 >= 560 and c_pos_y-10 <= 580 then
+					ifReset <= '1';
+					lvl <= lvl+1;
+					
 					p1_height <= 80;
-				end if;				
-				if p2_height < 80 then				
-					p2_v <= p2_v * (-1);
+					p1_v <= abs(p1_v) + 1;
+										
 					p2_height <= 80;
-				end if;				
-				if p3_height < 80 then				
-					p3_v <= p3_v * (-1);
+					p2_v <= abs(p2_v) + 1;
+					
 					p3_height <= 80;
-				end if;			
+					p3_v <= abs(p3_v) + 1;
+					
+				end if;
+			else 
+				ifReset <= '0';
 			end if;
+			
+		end if;
 	end process;
 	
-	process(clk, c_pos_x, c_pos_y, p1_height, p1_y, p2_x, p2_y, p3_x, p3_y)
-	begin
 	
-	end process;
+	
+	
+	--process(clk, c_pos_x, c_pos_y)
+    --begin
+	--	if rising_edge(clk) then
+	--		if c_pos_x+10 >= 770 and c_pos_x-10 <= 790 then
+	--			if c_pos_y+10 >= 560 and c_pos_y-10 <= 580 then
+	--				ifReset <= '1';
+	--			
+	--			end if;
+	--		--else
+				
+	--	end if;
+	--end process;
+	
+	mReset<=ifReset;
+	--ifReset<='0';
 end Behavioral;
 

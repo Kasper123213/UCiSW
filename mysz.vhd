@@ -39,7 +39,9 @@ entity mysz is
 		B1_Status : in std_logic_vector(7 downto 0);
 		B2_X : in std_logic_vector(7 downto 0);
 		B3_Y: in std_logic_vector(7 downto 0);
-		DataRdy : in STD_logic
+		DataRdy : in STD_logic;
+		
+		mReset : in STD_LOGIC
 		);
 end mysz;
 
@@ -65,7 +67,7 @@ begin
 process(clk, DataRdy, B1_Status, B2_X, B3_Y)
     begin
 	 if rising_edge(clk) and DataRdy = '1' then		
-	 if x_c > 780 or x_c < 60 or y_c > 580 or y_c < 20 then
+	 if mReset='1' or x_c > 780 or x_c < 60 or y_c > 580 or y_c < 20 then
 		x_c <= "00000011110";
 		y_c <= "00100011110";
 	else 
