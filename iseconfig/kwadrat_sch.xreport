@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2024-05-21T10:36:48</DateModified>
+  <DateModified>2024-06-04T13:03:07</DateModified>
   <ModuleName>kwadrat_sch</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/lab/Desktop/projekt1uciswv2.1/iseconfig/kwadrat_sch.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/lab/Desktop/projekt1uciswv2.1\</ImplementationReportsDirectory>
-  <DateInitialized>2024-04-25T08:10:56</DateInitialized>
+  <SavedFilePath>C:/Users/lab/Desktop/projekt1uciswv5.0/iseconfig/kwadrat_sch.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/lab/Desktop/projekt1uciswv5.0\</ImplementationReportsDirectory>
+  <DateInitialized>2024-06-04T10:19:43</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : kwadrat_sch.vhf
--- /___/   /\     Timestamp : 04/30/2024 10:31:46
+-- /___/   /\     Timestamp : 06/04/2024 10:26:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.vhf -w C:/Users/lab/Desktop/projekt1uciswv1.2/kwadrat_sch.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat_sch.vhf -w C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat_sch.sch
 --Design Name: kwadrat_sch
 --Device: spartan3e
 --Purpose:
@@ -45,17 +45,7 @@ architecture BEHAVIORAL of kwadrat_sch is
    signal XLXN_13   : std_logic;
    signal XLXN_14   : std_logic_vector (10 downto 0);
    signal XLXN_15   : std_logic_vector (10 downto 0);
-   component kwadrat
-      port ( clk       : in    std_logic; 
-             pos_x     : in    std_logic_vector (10 downto 0); 
-             pos_y     : in    std_logic_vector (10 downto 0); 
-             vga_r     : out   std_logic; 
-             vga_g     : out   std_logic; 
-             vga_b     : out   std_logic; 
-             vga_hsync : out   std_logic; 
-             vga_vsync : out   std_logic);
-   end component;
-   
+   signal XLXN_16   : std_logic;
    component PS2_Mouse
       port ( PS2_Data  : inout std_logic; 
              PS2_Clk   : inout std_logic; 
@@ -76,20 +66,23 @@ architecture BEHAVIORAL of kwadrat_sch is
              B2_X      : in    std_logic_vector (7 downto 0); 
              B3_Y      : in    std_logic_vector (7 downto 0); 
              pos_x     : out   std_logic_vector (10 downto 0); 
-             pos_y     : out   std_logic_vector (10 downto 0));
+             pos_y     : out   std_logic_vector (10 downto 0); 
+             mReset    : in    std_logic);
+   end component;
+   
+   component kwadrat
+      port ( clk       : in    std_logic; 
+             pos_x     : in    std_logic_vector (10 downto 0); 
+             pos_y     : in    std_logic_vector (10 downto 0); 
+             vga_r     : out   std_logic; 
+             vga_g     : out   std_logic; 
+             vga_b     : out   std_logic; 
+             vga_hsync : out   std_logic; 
+             vga_vsync : out   std_logic; 
+             mReset    : out   std_logic);
    end component;
    
 begin
-   XLXI_1 : kwadrat
-      port map (clk=>clk,
-                pos_x(10 downto 0)=>XLXN_14(10 downto 0),
-                pos_y(10 downto 0)=>XLXN_15(10 downto 0),
-                vga_b=>VGA_B,
-                vga_g=>VGA_G,
-                vga_hsync=>VGA_HSYNC,
-                vga_r=>VGA_R,
-                vga_vsync=>VGA_VSYNC);
-   
    XLXI_2 : PS2_Mouse
       port map (Clk_Sys=>clk,
                 Clk_50MHz=>clk,
@@ -102,14 +95,26 @@ begin
                 PS2_Clk=>PS2_Clk,
                 PS2_Data=>PS2_Data);
    
-   XLXI_4 : mysz
+   XLXI_11 : mysz
       port map (B1_Status(7 downto 0)=>XLXN_10(7 downto 0),
                 B2_X(7 downto 0)=>XLXN_11(7 downto 0),
                 B3_Y(7 downto 0)=>XLXN_12(7 downto 0),
                 clk=>clk,
                 DataRdy=>XLXN_13,
+                mReset=>XLXN_16,
                 pos_x(10 downto 0)=>XLXN_14(10 downto 0),
                 pos_y(10 downto 0)=>XLXN_15(10 downto 0));
+   
+   XLXI_15 : kwadrat
+      port map (clk=>clk,
+                pos_x(10 downto 0)=>XLXN_14(10 downto 0),
+                pos_y(10 downto 0)=>XLXN_15(10 downto 0),
+                mReset=>XLXN_16,
+                vga_b=>VGA_B,
+                vga_g=>VGA_G,
+                vga_hsync=>VGA_HSYNC,
+                vga_r=>VGA_R,
+                vga_vsync=>VGA_VSYNC);
    
 end BEHAVIORAL;
 

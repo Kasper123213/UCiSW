@@ -52,8 +52,8 @@ architecture Behavioral of mysz is
 	signal dy : signed(7 downto 0) := signed(B3_Y);
 	signal x : signed(10 downto 0);
 	signal y : signed(10 downto 0);
-	signal x_c : signed(10 downto 0) := "00000011110";
-	signal y_c : signed(10 downto 0) := "00100011110";
+	signal x_c : signed(10 downto 0) := "00001010000";
+	signal y_c : signed(10 downto 0) := "00001010000";
 
 
 begin
@@ -64,15 +64,16 @@ begin
 
 	
 	
-process(clk, DataRdy, B1_Status, B2_X, B3_Y)
+process(clk, DataRdy, B1_Status, B2_X, B3_Y, mReset)
     begin
-	 if rising_edge(clk) and DataRdy = '1' then		
-	 if mReset='1' or x_c > 780 or x_c < 60 or y_c > 580 or y_c < 20 then
-		x_c <= "00000011110";
-		y_c <= "00100011110";
-	else 
+	 if rising_edge(clk) then	
+	 if mReset='1' or x_c > 790 or x_c < 70 or y_c > 590 or y_c < 30 then
+		x_c <= "00001010000";
+		y_c <= "00001010000";
+	elsif DataRdy = '1' then
 		x_c <= x_c + dx;
 		y_c <= y_c - dy;
+	 end if;
 	 end if;
 	--if x_c > 780 then
 	--		x_c <= "01100001100";

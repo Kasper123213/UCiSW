@@ -8,4 +8,5 @@ vga_g
 vga_b
 vga_hsync
 vga_vsync
+mReset
 [BiDir]

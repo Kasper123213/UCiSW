@@ -16,3 +16,5 @@ vhdtdtfi -lib work mysz.vhd -prj projekt1 -o mysz.spl -module mysz -template C:/
 spl2sym -intstyle ise -family spartan3e mysz.spl C:/Users/lab/Desktop/projekt1uciswv1.1/mysz.sym 
 vhdtdtfi -lib work mysz.vhd -prj projekt1 -o mysz.spl -module mysz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e mysz.spl C:/Users/lab/Desktop/projekt1uciswv1.1/mysz.sym 
+vhdtdtfi -lib work mysz.vhd -prj projekt1 -o mysz.spl -module mysz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mysz.spl C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.sym 

@@ -3,11 +3,11 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pn" timeStamp="Tue May 21 13:05:40 2024">
+<application name="pn" timeStamp="Tue Jun 04 11:58:25 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="49EE42A59DAA415A93149D5BEDF56E9F" type="project"/>
-<property name="ProjectIteration" value="39" type="project"/>
-<property name="ProjectFile" value="C:/Users/lab/Desktop/projekt1uciswv2.1/projekt1.xise" type="project"/>
+<property name="ProjectIteration" value="52" type="project"/>
+<property name="ProjectFile" value="C:/Users/lab/Desktop/projekt1uciswv4.0/projekt1.xise" type="project"/>
 <property name="ProjectCreationTimestamp" value="2024-03-14T09:37:05" type="project"/>
 </section>
 <section name="Project Statistics" visible="true">
@@ -26,7 +26,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PROP_UserConstraintEditorPreference" value="Text Editor" type="process"/>
 <property name="PROP_intProjectCreationTimestamp" value="2024-03-14T09:37:05" type="design"/>
 <property name="PROP_intWbtProjectID" value="49EE42A59DAA415A93149D5BEDF56E9F" type="design"/>
-<property name="PROP_intWbtProjectIteration" value="39" type="process"/>
+<property name="PROP_intWbtProjectIteration" value="52" type="process"/>
 <property name="PROP_intWorkingDirLocWRTProjDir" value="Same" type="design"/>
 <property name="PROP_intWorkingDirUsed" value="No" type="design"/>
 <property name="PROP_selectedSimRootSourceNode_behav" value="work.kwadrat" type="process"/>

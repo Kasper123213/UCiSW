@@ -37,3 +37,17 @@ vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -tem
 spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
 vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv1.1/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 
+vhdtdtfi -lib work kwadrat.vhd -prj projekt1 -o kwadrat.spl -module kwadrat -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e kwadrat.spl C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.sym 

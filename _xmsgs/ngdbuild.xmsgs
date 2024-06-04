@@ -8,10 +8,10 @@
 <msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk&quot; PERIOD = 20.0ns HIGH 50%;&gt; [GenIO.ucf(3)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N35</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="old" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N290</arg>&apos; has no driver
 </msg>
 
-<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N36</arg>&apos; has no driver
+<msg type="warning" file="NgdBuild" num="452" delta="new" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">N291</arg>&apos; has no driver
 </msg>
 
 </messages>

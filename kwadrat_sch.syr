@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: kwadrat_sch.prj
 
@@ -104,13 +104,12 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd" in Library work.
+Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" in Library work.
+Architecture behavioral of Entity mysz is up to date.
+Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd" in Library work.
 Entity <kwadrat> compiled.
 Entity <kwadrat> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" in Library work.
-Entity <mysz> compiled.
-Entity <mysz> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat_sch.vhf" in Library work.
+Compiling vhdl file "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat_sch.vhf" in Library work.
 Architecture behavioral of Entity kwadrat_sch is up to date.
 
 =========================================================================
@@ -118,35 +117,35 @@ Architecture behavioral of Entity kwadrat_sch is up to date.
 =========================================================================
 Analyzing hierarchy for entity <kwadrat_sch> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <kwadrat> in library <work> (architecture <behavioral>).
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd" line 37: Default value is ignored for signal <c_pos_x>.
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd" line 38: Default value is ignored for signal <c_pos_y>.
-
 Analyzing hierarchy for entity <mysz> in library <work> (architecture <behavioral>).
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" line 48: Default value is ignored for signal <status>.
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" line 49: Default value is ignored for signal <dx>.
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" line 50: Default value is ignored for signal <dy>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" line 50: Default value is ignored for signal <status>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" line 51: Default value is ignored for signal <dx>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" line 52: Default value is ignored for signal <dy>.
+
+Analyzing hierarchy for entity <kwadrat> in library <work> (architecture <behavioral>).
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd" line 39: Default value is ignored for signal <c_pos_x>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd" line 40: Default value is ignored for signal <c_pos_y>.
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <kwadrat_sch> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat_sch.vhf" line 93: Instantiating black box module <PS2_Mouse>.
+WARNING:Xst:2211 - "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat_sch.vhf" line 86: Instantiating black box module <PS2_Mouse>.
 Entity <kwadrat_sch> analyzed. Unit <kwadrat_sch> generated.
 
-Analyzing Entity <kwadrat> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd" line 37: Default value is ignored for signal <c_pos_x>.
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd" line 38: Default value is ignored for signal <c_pos_y>.
-WARNING:Xst:819 - "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd" line 87: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <p1_y>, <p1_height>, <p1_x>, <p_width>, <p2_y>, <p2_height>, <p2_x>, <p3_y>, <p3_height>, <p3_x>, <c_pos_y>, <c_pos_x>
-Entity <kwadrat> analyzed. Unit <kwadrat> generated.
-
 Analyzing Entity <mysz> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" line 48: Default value is ignored for signal <status>.
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" line 49: Default value is ignored for signal <dx>.
-WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd" line 50: Default value is ignored for signal <dy>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" line 50: Default value is ignored for signal <status>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" line 51: Default value is ignored for signal <dx>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd" line 52: Default value is ignored for signal <dy>.
 Entity <mysz> analyzed. Unit <mysz> generated.
+
+Analyzing Entity <kwadrat> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd" line 39: Default value is ignored for signal <c_pos_x>.
+WARNING:Xst:2094 - "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd" line 40: Default value is ignored for signal <c_pos_y>.
+WARNING:Xst:819 - "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd" line 93: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <p1_y>, <p1_height>, <p1_x>, <p_width>, <p2_y>, <p2_height>, <p2_x>, <p3_y>, <p3_height>, <p3_x>, <c_pos_y>, <c_pos_x>, <lvl>
+Entity <kwadrat> analyzed. Unit <kwadrat> generated.
 
 
 =========================================================================
@@ -155,8 +154,26 @@ Entity <mysz> analyzed. Unit <mysz> generated.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <mysz>.
+    Related source file is "C:/Users/lab/Desktop/projekt1uciswv4.0/mysz.vhd".
+WARNING:Xst:647 - Input <B1_Status> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <status> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 11-bit up accumulator for signal <x_c>.
+    Found 11-bit comparator greater for signal <x_c$cmp_gt0000> created at line 70.
+    Found 11-bit comparator greater for signal <x_c$cmp_gt0001> created at line 70.
+    Found 11-bit comparator less for signal <x_c$cmp_lt0000> created at line 70.
+    Found 11-bit comparator less for signal <x_c$cmp_lt0001> created at line 70.
+    Found 11-bit down accumulator for signal <y_c>.
+    Summary:
+	inferred   2 Accumulator(s).
+	inferred   4 Comparator(s).
+Unit <mysz> synthesized.
+
+
 Synthesizing Unit <kwadrat>.
-    Related source file is "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat.vhd".
+    Related source file is "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat.vhd".
 WARNING:Xst:653 - Signal <p_width> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000101000.
 WARNING:Xst:653 - Signal <p3_y> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000100101100.
 WARNING:Xst:653 - Signal <p3_x> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000001001011000.
@@ -166,125 +183,162 @@ WARNING:Xst:653 - Signal <p1_y> is used but never assigned. This sourceless sign
 WARNING:Xst:653 - Signal <p1_x> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000011001000.
 WARNING:Xst:737 - Found 1-bit latch for signal <h_sync>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 11-bit up counter for signal <h_counter>.
-    Found 11-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 93.
+    Found 11-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 99.
+    Found 1-bit register for signal <ifReset>.
+    Found 11-bit subtractor for signal <ifReset$addsub0000> created at line 191.
+    Found 11-bit adder for signal <ifReset$addsub0001> created at line 191.
+    Found 11-bit subtractor for signal <ifReset$addsub0002> created at line 196.
+    Found 11-bit adder for signal <ifReset$addsub0003> created at line 196.
+    Found 11-bit subtractor for signal <ifReset$addsub0004> created at line 200.
+    Found 11-bit adder for signal <ifReset$addsub0005> created at line 200.
+    Found 11-bit comparator greater for signal <ifReset$cmp_gt0000> created at line 191.
+    Found 11-bit comparator greater for signal <ifReset$cmp_gt0001> created at line 196.
+    Found 11-bit comparator greater for signal <ifReset$cmp_gt0002> created at line 200.
+    Found 11-bit comparator greater for signal <ifReset$cmp_gt0003> created at line 204.
+    Found 11-bit comparator less for signal <ifReset$cmp_lt0000> created at line 191.
+    Found 11-bit comparator less for signal <ifReset$cmp_lt0001> created at line 196.
+    Found 11-bit comparator less for signal <ifReset$cmp_lt0002> created at line 200.
+    Found 11-bit comparator less for signal <ifReset$cmp_lt0003> created at line 204.
+    Found 32-bit up counter for signal <lvl>.
     Found 32-bit register for signal <p1_height>.
-    Found 32-bit adder for signal <p1_height$addsub0000> created at line 140.
-    Found 32-bit comparator greater for signal <p1_height$cmp_gt0000> created at line 145.
-    Found 32-bit comparator less for signal <p1_height$cmp_lt0001> created at line 157.
+    Found 32-bit comparator greatequal for signal <p1_height$cmp_ge0000> created at line 177.
+    Found 32-bit comparator greater for signal <p1_height$cmp_gt0000> created at line 165.
+    Found 32-bit comparator lessequal for signal <p1_height$cmp_le0000> created at line 165.
+    Found 32-bit comparator less for signal <p1_height$cmp_lt0000> created at line 177.
+    Found 32-bit adder for signal <p1_height$share0000>.
     Found 32-bit register for signal <p1_v>.
-    Found 32-bit adder for signal <p1_v$sub0000> created at line 146.
+    Found 32-bit adder for signal <p1_v$addsub0000>.
+    Found 32-bit adder for signal <p1_v$mux0000>.
     Found 32-bit register for signal <p2_height>.
-    Found 32-bit adder for signal <p2_height$addsub0000> created at line 141.
-    Found 32-bit comparator greater for signal <p2_height$cmp_gt0000> created at line 149.
-    Found 32-bit comparator less for signal <p2_height$cmp_lt0001> created at line 161.
+    Found 32-bit comparator greater for signal <p2_height$cmp_gt0000> created at line 169.
+    Found 32-bit comparator less for signal <p2_height$cmp_lt0000> created at line 181.
+    Found 32-bit adder for signal <p2_height$share0000>.
     Found 32-bit register for signal <p2_v>.
-    Found 32-bit adder for signal <p2_v$sub0000> created at line 150.
+    Found 32-bit adder for signal <p2_v$addsub0000>.
+    Found 32-bit comparator greatequal for signal <p2_v$cmp_ge0000> created at line 181.
+    Found 32-bit comparator lessequal for signal <p2_v$cmp_le0000> created at line 169.
+    Found 32-bit adder for signal <p2_v$mux0000>.
     Found 32-bit register for signal <p3_height>.
-    Found 32-bit adder for signal <p3_height$addsub0000> created at line 142.
-    Found 32-bit comparator greater for signal <p3_height$cmp_gt0000> created at line 153.
-    Found 32-bit comparator less for signal <p3_height$cmp_lt0001> created at line 165.
+    Found 11-bit adder for signal <p3_height$add0000> created at line 190.
+    Found 11-bit adder for signal <p3_height$add0001> created at line 192.
+    Found 11-bit adder for signal <p3_height$add0002> created at line 197.
+    Found 32-bit comparator greatequal for signal <p3_height$cmp_ge0000> created at line 185.
+    Found 11-bit comparator greatequal for signal <p3_height$cmp_ge0001> created at line 190.
+    Found 11-bit comparator greatequal for signal <p3_height$cmp_ge0002> created at line 192.
+    Found 11-bit comparator greatequal for signal <p3_height$cmp_ge0003> created at line 197.
+    Found 11-bit comparator greatequal for signal <p3_height$cmp_ge0004> created at line 201.
+    Found 11-bit comparator greater for signal <p3_height$cmp_gt0000> created at line 201.
+    Found 11-bit comparator greater for signal <p3_height$cmp_gt0001> created at line 197.
+    Found 11-bit comparator greater for signal <p3_height$cmp_gt0002> created at line 192.
+    Found 11-bit comparator greater for signal <p3_height$cmp_gt0003> created at line 190.
+    Found 32-bit comparator greater for signal <p3_height$cmp_gt0004> created at line 173.
+    Found 32-bit comparator lessequal for signal <p3_height$cmp_le0000> created at line 173.
+    Found 11-bit comparator lessequal for signal <p3_height$cmp_le0001> created at line 190.
+    Found 11-bit comparator lessequal for signal <p3_height$cmp_le0002> created at line 192.
+    Found 11-bit comparator lessequal for signal <p3_height$cmp_le0003> created at line 197.
+    Found 11-bit comparator lessequal for signal <p3_height$cmp_le0004> created at line 201.
+    Found 11-bit comparator less for signal <p3_height$cmp_lt0000> created at line 201.
+    Found 11-bit comparator less for signal <p3_height$cmp_lt0001> created at line 197.
+    Found 11-bit comparator less for signal <p3_height$cmp_lt0002> created at line 192.
+    Found 11-bit comparator less for signal <p3_height$cmp_lt0003> created at line 190.
+    Found 32-bit comparator less for signal <p3_height$cmp_lt0004> created at line 185.
+    Found 32-bit adder for signal <p3_height$share0000>.
+    Found 11-bit subtractor for signal <p3_height$sub0000> created at line 190.
+    Found 11-bit subtractor for signal <p3_height$sub0001> created at line 192.
+    Found 11-bit subtractor for signal <p3_height$sub0002> created at line 197.
     Found 32-bit register for signal <p3_v>.
-    Found 32-bit adder for signal <p3_v$sub0000> created at line 154.
+    Found 32-bit adder for signal <p3_v$addsub0000>.
+    Found 32-bit adder for signal <p3_v$mux0000>.
     Found 10-bit up counter for signal <v_counter>.
-    Found 10-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 89.
-    Found 32-bit adder for signal <vga_b$add0000> created at line 108.
-    Found 32-bit adder for signal <vga_b$add0001> created at line 108.
-    Found 32-bit adder for signal <vga_b$add0002> created at line 113.
-    Found 32-bit adder for signal <vga_b$add0003> created at line 113.
-    Found 32-bit adder for signal <vga_b$add0004> created at line 117.
-    Found 32-bit adder for signal <vga_b$add0005> created at line 117.
-    Found 11-bit adder for signal <vga_b$add0006> created at line 121.
-    Found 11-bit adder for signal <vga_b$add0007> created at line 121.
-    Found 10-bit comparator greater for signal <vga_b$cmp_gt0000> created at line 100.
-    Found 11-bit comparator greater for signal <vga_b$cmp_gt0001> created at line 100.
-    Found 10-bit comparator greater for signal <vga_b$cmp_gt0002> created at line 103.
-    Found 11-bit comparator greater for signal <vga_b$cmp_gt0003> created at line 103.
-    Found 32-bit comparator greater for signal <vga_b$cmp_gt0004> created at line 108.
-    Found 32-bit comparator greater for signal <vga_b$cmp_gt0005> created at line 108.
-    Found 32-bit comparator greater for signal <vga_b$cmp_gt0006> created at line 113.
-    Found 32-bit comparator greater for signal <vga_b$cmp_gt0007> created at line 113.
-    Found 32-bit comparator greater for signal <vga_b$cmp_gt0008> created at line 117.
-    Found 32-bit comparator greater for signal <vga_b$cmp_gt0009> created at line 117.
-    Found 11-bit comparator greater for signal <vga_b$cmp_gt0010> created at line 121.
-    Found 11-bit comparator greater for signal <vga_b$cmp_gt0011> created at line 121.
-    Found 10-bit comparator less for signal <vga_b$cmp_lt0000> created at line 100.
-    Found 11-bit comparator less for signal <vga_b$cmp_lt0001> created at line 100.
-    Found 10-bit comparator less for signal <vga_b$cmp_lt0002> created at line 103.
-    Found 11-bit comparator less for signal <vga_b$cmp_lt0003> created at line 103.
-    Found 32-bit comparator less for signal <vga_b$cmp_lt0004> created at line 108.
-    Found 32-bit comparator less for signal <vga_b$cmp_lt0005> created at line 108.
-    Found 32-bit comparator less for signal <vga_b$cmp_lt0006> created at line 113.
-    Found 32-bit comparator less for signal <vga_b$cmp_lt0007> created at line 113.
-    Found 32-bit comparator less for signal <vga_b$cmp_lt0008> created at line 117.
-    Found 32-bit comparator less for signal <vga_b$cmp_lt0009> created at line 117.
-    Found 11-bit comparator less for signal <vga_b$cmp_lt0010> created at line 121.
-    Found 11-bit comparator less for signal <vga_b$cmp_lt0011> created at line 121.
-    Found 32-bit subtractor for signal <vga_b$sub0000> created at line 108.
-    Found 32-bit subtractor for signal <vga_b$sub0001> created at line 108.
-    Found 32-bit subtractor for signal <vga_b$sub0002> created at line 113.
-    Found 32-bit subtractor for signal <vga_b$sub0003> created at line 113.
-    Found 32-bit subtractor for signal <vga_b$sub0004> created at line 117.
-    Found 32-bit subtractor for signal <vga_b$sub0005> created at line 117.
+    Found 10-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 95.
+    Found 32-bit adder for signal <vga_b$add0000> created at line 114.
+    Found 32-bit adder for signal <vga_b$add0001> created at line 114.
+    Found 32-bit adder for signal <vga_b$add0002> created at line 119.
+    Found 32-bit adder for signal <vga_b$add0003> created at line 119.
+    Found 32-bit adder for signal <vga_b$add0004> created at line 123.
+    Found 32-bit adder for signal <vga_b$add0005> created at line 123.
+    Found 11-bit adder for signal <vga_b$add0006> created at line 127.
+    Found 11-bit adder for signal <vga_b$add0007> created at line 127.
+    Found 10-bit comparator greater for signal <vga_b$cmp_gt0000> created at line 106.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0001> created at line 106.
+    Found 10-bit comparator greater for signal <vga_b$cmp_gt0002> created at line 109.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0003> created at line 109.
+    Found 32-bit comparator greater for signal <vga_b$cmp_gt0004> created at line 114.
+    Found 32-bit comparator greater for signal <vga_b$cmp_gt0005> created at line 114.
+    Found 32-bit comparator greater for signal <vga_b$cmp_gt0006> created at line 119.
+    Found 32-bit comparator greater for signal <vga_b$cmp_gt0007> created at line 119.
+    Found 32-bit comparator greater for signal <vga_b$cmp_gt0008> created at line 123.
+    Found 32-bit comparator greater for signal <vga_b$cmp_gt0009> created at line 123.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0010> created at line 127.
+    Found 11-bit comparator greater for signal <vga_b$cmp_gt0011> created at line 127.
+    Found 10-bit comparator less for signal <vga_b$cmp_lt0000> created at line 106.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0001> created at line 106.
+    Found 10-bit comparator less for signal <vga_b$cmp_lt0002> created at line 109.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0003> created at line 109.
+    Found 32-bit comparator less for signal <vga_b$cmp_lt0004> created at line 114.
+    Found 32-bit comparator less for signal <vga_b$cmp_lt0005> created at line 114.
+    Found 32-bit comparator less for signal <vga_b$cmp_lt0006> created at line 119.
+    Found 32-bit comparator less for signal <vga_b$cmp_lt0007> created at line 119.
+    Found 32-bit comparator less for signal <vga_b$cmp_lt0008> created at line 123.
+    Found 32-bit comparator less for signal <vga_b$cmp_lt0009> created at line 123.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0010> created at line 127.
+    Found 11-bit comparator less for signal <vga_b$cmp_lt0011> created at line 127.
+    Found 32-bit subtractor for signal <vga_b$sub0000> created at line 114.
+    Found 32-bit subtractor for signal <vga_b$sub0001> created at line 114.
+    Found 32-bit subtractor for signal <vga_b$sub0002> created at line 119.
+    Found 32-bit subtractor for signal <vga_b$sub0003> created at line 119.
+    Found 32-bit subtractor for signal <vga_b$sub0004> created at line 123.
+    Found 32-bit subtractor for signal <vga_b$sub0005> created at line 123.
+    Found 11-bit subtractor for signal <vga_b$sub0006> created at line 127.
+    Found 11-bit subtractor for signal <vga_b$sub0007> created at line 127.
+    Found 1-bit register for signal <win>.
     Summary:
-	inferred   2 Counter(s).
-	inferred 192 D-type flip-flop(s).
-	inferred  20 Adder/Subtractor(s).
-	inferred  32 Comparator(s).
+	inferred   3 Counter(s).
+	inferred 194 D-type flip-flop(s).
+	inferred  37 Adder/Subtractor(s).
+	inferred  62 Comparator(s).
 Unit <kwadrat> synthesized.
 
 
-Synthesizing Unit <mysz>.
-    Related source file is "C:/Users/lab/Desktop/projekt1uciswv2.1/mysz.vhd".
-WARNING:Xst:647 - Input <B1_Status> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <status> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 11-bit register for signal <x_c>.
-    Found 11-bit adder for signal <x_c$addsub0000> created at line 73.
-    Found 11-bit comparator greater for signal <x_c$cmp_gt0000> created at line 68.
-    Found 11-bit comparator less for signal <x_c$cmp_lt0000> created at line 69.
-    Found 11-bit register for signal <y_c>.
-    Found 11-bit subtractor for signal <y_c$addsub0000> created at line 80.
-    Found 11-bit comparator greater for signal <y_c$cmp_gt0000> created at line 75.
-    Found 11-bit comparator less for signal <y_c$cmp_lt0000> created at line 76.
-    Summary:
-	inferred  22 D-type flip-flop(s).
-	inferred   2 Adder/Subtractor(s).
-	inferred   4 Comparator(s).
-Unit <mysz> synthesized.
-
-
 Synthesizing Unit <kwadrat_sch>.
-    Related source file is "C:/Users/lab/Desktop/projekt1uciswv2.1/kwadrat_sch.vhf".
+    Related source file is "C:/Users/lab/Desktop/projekt1uciswv4.0/kwadrat_sch.vhf".
 Unit <kwadrat_sch> synthesized.
 
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 22
- 11-bit adder                                          : 3
- 11-bit subtractor                                     : 1
- 32-bit adder                                          : 12
+# Adders/Subtractors                                   : 37
+ 11-bit adder                                          : 8
+ 11-bit subtractor                                     : 8
+ 32-bit adder                                          : 15
  32-bit subtractor                                     : 6
-# Counters                                             : 2
+# Counters                                             : 3
  10-bit up counter                                     : 1
  11-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 2
+ 11-bit down accumulator                               : 1
+ 11-bit up accumulator                                 : 1
 # Registers                                            : 8
- 11-bit register                                       : 2
+ 1-bit register                                        : 2
  32-bit register                                       : 6
 # Latches                                              : 1
  1-bit latch                                           : 1
-# Comparators                                          : 36
+# Comparators                                          : 66
  10-bit comparator greatequal                          : 1
  10-bit comparator greater                             : 2
  10-bit comparator less                                : 2
- 11-bit comparator greatequal                          : 1
- 11-bit comparator greater                             : 6
- 11-bit comparator less                                : 6
+ 11-bit comparator greatequal                          : 5
+ 11-bit comparator greater                             : 14
+ 11-bit comparator less                                : 14
+ 11-bit comparator lessequal                           : 4
+ 32-bit comparator greatequal                          : 3
  32-bit comparator greater                             : 9
  32-bit comparator less                                : 9
+ 32-bit comparator lessequal                           : 3
 
 =========================================================================
 
@@ -299,27 +353,34 @@ Loading core <PS2_Mouse> for timing and area information for instance <XLXI_2>.
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 22
- 11-bit adder                                          : 3
- 11-bit subtractor                                     : 1
- 32-bit adder                                          : 12
+# Adders/Subtractors                                   : 37
+ 11-bit adder                                          : 8
+ 11-bit subtractor                                     : 8
+ 32-bit adder                                          : 15
  32-bit subtractor                                     : 6
-# Counters                                             : 2
+# Counters                                             : 3
  10-bit up counter                                     : 1
  11-bit up counter                                     : 1
-# Registers                                            : 214
- Flip-Flops                                            : 214
+ 32-bit up counter                                     : 1
+# Accumulators                                         : 2
+ 11-bit down accumulator                               : 1
+ 11-bit up accumulator                                 : 1
+# Registers                                            : 194
+ Flip-Flops                                            : 194
 # Latches                                              : 1
  1-bit latch                                           : 1
-# Comparators                                          : 36
+# Comparators                                          : 66
  10-bit comparator greatequal                          : 1
  10-bit comparator greater                             : 2
  10-bit comparator less                                : 2
- 11-bit comparator greatequal                          : 1
- 11-bit comparator greater                             : 6
- 11-bit comparator less                                : 6
+ 11-bit comparator greatequal                          : 5
+ 11-bit comparator greater                             : 14
+ 11-bit comparator less                                : 14
+ 11-bit comparator lessequal                           : 4
+ 32-bit comparator greatequal                          : 3
  32-bit comparator greater                             : 9
  32-bit comparator less                                : 9
+ 32-bit comparator lessequal                           : 3
 
 =========================================================================
 
@@ -331,11 +392,9 @@ Optimizing unit <kwadrat_sch> ...
 
 Optimizing unit <kwadrat> ...
 
-Optimizing unit <mysz> ...
-
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block kwadrat_sch, actual ratio is 12.
+Found area constraint ratio of 100 (+ 5) on block kwadrat_sch, actual ratio is 16.
 
 Final Macro Processing ...
 
@@ -343,8 +402,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 235
- Flip-Flops                                            : 235
+# Registers                                            : 269
+ Flip-Flops                                            : 269
 
 =========================================================================
 
@@ -373,30 +432,31 @@ Design Statistics
 # IOs                              : 10
 
 Cell Usage :
-# BELS                             : 2072
+# BELS                             : 3101
 #      GND                         : 2
-#      INV                         : 241
-#      LUT1                        : 155
-#      LUT2                        : 359
-#      LUT2_L                      : 2
-#      LUT3                        : 44
-#      LUT3_D                      : 2
-#      LUT4                        : 115
+#      INV                         : 301
+#      LUT1                        : 226
+#      LUT2                        : 336
+#      LUT2_L                      : 4
+#      LUT3                        : 94
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 408
 #      LUT4_D                      : 8
-#      LUT4_L                      : 5
-#      MUXCY                       : 685
-#      MUXF5                       : 5
+#      LUT4_L                      : 6
+#      MUXCY                       : 993
+#      MUXF5                       : 61
 #      VCC                         : 2
-#      XORCY                       : 447
-# FlipFlops/Latches                : 315
+#      XORCY                       : 657
+# FlipFlops/Latches                : 349
 #      FD                          : 11
-#      FDE                         : 155
+#      FDE                         : 231
 #      FDR                         : 15
-#      FDRE                        : 116
+#      FDRE                        : 76
 #      FDRS                        : 3
 #      FDRSE                       : 1
 #      FDS                         : 1
-#      FDSE                        : 12
+#      FDSE                        : 10
 #      LD                          : 1
 # Shift Registers                  : 1
 #      SRL16E                      : 1
@@ -413,10 +473,10 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      509  out of   4656    10%  
- Number of Slice Flip Flops:            314  out of   9312     3%  
- Number of 4 input LUTs:                932  out of   9312    10%  
-    Number used as logic:               931
+ Number of Slices:                      744  out of   4656    15%  
+ Number of Slice Flip Flops:            348  out of   9312     3%  
+ Number of 4 input LUTs:               1387  out of   9312    14%  
+    Number used as logic:              1386
     Number used as Shift registers:       1
  Number of IOs:                          10
  Number of bonded IOBs:                  10  out of    232     4%  
@@ -444,8 +504,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 315   |
-VGA_VSYNC_OBUF(XLXI_1/v_sync48:O)  | NONE(*)(XLXI_1/h_sync) | 1     |
+clk                                | BUFGP                  | 349   |
+VGA_VSYNC_OBUF(XLXI_15/v_sync48:O) | NONE(*)(XLXI_15/h_sync)| 1     |
 -----------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -460,9 +520,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 7.831ns (Maximum Frequency: 127.694MHz)
+   Minimum period: 14.110ns (Maximum Frequency: 70.872MHz)
    Minimum input arrival time before clock: 3.011ns
-   Maximum output required time after clock: 15.535ns
+   Maximum output required time after clock: 16.754ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -471,28 +531,71 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.831ns (frequency: 127.694MHz)
-  Total number of paths / destination ports: 25036 / 735
+  Clock period: 14.110ns (frequency: 70.872MHz)
+  Total number of paths / destination ports: 1022494 / 761
 -------------------------------------------------------------------------
-Delay:               7.831ns (Levels of Logic = 4)
-  Source:            XLXI_1/v_counter_0 (FF)
-  Destination:       XLXI_1/p1_height_31 (FF)
+Delay:               14.110ns (Levels of Logic = 47)
+  Source:            XLXI_11/x_c_1 (FF)
+  Destination:       XLXI_15/p1_v_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: XLXI_1/v_counter_0 to XLXI_1/p1_height_31
+  Data Path: XLXI_11/x_c_1 to XLXI_15/p1_v_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q            13   0.591   1.158  XLXI_1/v_counter_0 (XLXI_1/v_counter_0)
-     LUT4:I0->O            1   0.704   0.499  XLXI_1/p3_height_and000053 (XLXI_1/p3_height_and000053)
-     LUT2:I1->O            1   0.704   0.424  XLXI_1/p3_height_and000054 (XLXI_1/p3_height_and000054)
-     LUT4_D:I3->O          2   0.704   0.526  XLXI_1/p3_height_and000066 (XLXI_1/p3_height_and0000)
-     LUT2:I1->O           32   0.704   1.262  XLXI_1/p2_height_not00011 (XLXI_1/p2_height_not0001)
-     FDRE:CE                   0.555          XLXI_1/p2_height_0
+     FDRE:C->Q             5   0.591   0.808  XLXI_11/x_c_1 (XLXI_11/x_c_1)
+     LUT1:I0->O            1   0.704   0.000  XLXI_15/Msub_vga_b_sub0007_cy<1>_rt (XLXI_15/Msub_vga_b_sub0007_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_15/Msub_vga_b_sub0007_cy<1> (XLXI_15/Msub_vga_b_sub0007_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0007_cy<2> (XLXI_15/Msub_vga_b_sub0007_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0007_cy<3> (XLXI_15/Msub_vga_b_sub0007_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0007_cy<4> (XLXI_15/Msub_vga_b_sub0007_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0007_cy<5> (XLXI_15/Msub_vga_b_sub0007_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0007_cy<6> (XLXI_15/Msub_vga_b_sub0007_cy<6>)
+     XORCY:CI->O           5   0.804   0.808  XLXI_15/Msub_vga_b_sub0007_xor<7> (XLXI_15/vga_b_sub0007<7>)
+     LUT1:I0->O            1   0.704   0.000  XLXI_15/Mcompar_p3_height_cmp_le0003_cy<2>_rt (XLXI_15/Mcompar_p3_height_cmp_le0003_cy<2>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_15/Mcompar_p3_height_cmp_le0003_cy<2> (XLXI_15/Mcompar_p3_height_cmp_le0003_cy<2>)
+     MUXCY:CI->O           1   0.459   0.455  XLXI_15/Mcompar_p3_height_cmp_le0003_cy<3> (XLXI_15/Mcompar_p3_height_cmp_le0003_cy<3>)
+     LUT4_D:I2->O         63   0.704   1.276  XLXI_15/Mcompar_p3_height_cmp_le0003_cy<5>1 (XLXI_15/p3_height_cmp_le0003)
+     LUT4:I3->O            1   0.704   0.000  XLXI_15/p1_height_mux0000<23>1_SW1_G (N145)
+     MUXF5:I1->O           1   0.321   0.499  XLXI_15/p1_height_mux0000<23>1_SW1 (N28)
+     LUT4:I1->O            1   0.704   0.000  XLXI_15/Madd_p3_v_mux0000_lut<0> (XLXI_15/Madd_p3_v_mux0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_15/Madd_p3_v_mux0000_cy<0> (XLXI_15/Madd_p3_v_mux0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<1> (XLXI_15/Madd_p3_v_mux0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<2> (XLXI_15/Madd_p3_v_mux0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<3> (XLXI_15/Madd_p3_v_mux0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<4> (XLXI_15/Madd_p3_v_mux0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<5> (XLXI_15/Madd_p3_v_mux0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<6> (XLXI_15/Madd_p3_v_mux0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<7> (XLXI_15/Madd_p3_v_mux0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<8> (XLXI_15/Madd_p3_v_mux0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<9> (XLXI_15/Madd_p3_v_mux0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<10> (XLXI_15/Madd_p3_v_mux0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<11> (XLXI_15/Madd_p3_v_mux0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<12> (XLXI_15/Madd_p3_v_mux0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<13> (XLXI_15/Madd_p3_v_mux0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<14> (XLXI_15/Madd_p3_v_mux0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<15> (XLXI_15/Madd_p3_v_mux0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<16> (XLXI_15/Madd_p3_v_mux0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<17> (XLXI_15/Madd_p3_v_mux0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<18> (XLXI_15/Madd_p3_v_mux0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<19> (XLXI_15/Madd_p3_v_mux0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<20> (XLXI_15/Madd_p3_v_mux0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<21> (XLXI_15/Madd_p3_v_mux0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<22> (XLXI_15/Madd_p3_v_mux0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<23> (XLXI_15/Madd_p3_v_mux0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<24> (XLXI_15/Madd_p3_v_mux0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<25> (XLXI_15/Madd_p3_v_mux0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<26> (XLXI_15/Madd_p3_v_mux0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<27> (XLXI_15/Madd_p3_v_mux0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<28> (XLXI_15/Madd_p3_v_mux0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<29> (XLXI_15/Madd_p3_v_mux0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  XLXI_15/Madd_p3_v_mux0000_cy<30> (XLXI_15/Madd_p3_v_mux0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  XLXI_15/Madd_p3_v_mux0000_xor<31> (XLXI_15/p3_v_mux0000<31>)
+     FDE:D                     0.308          XLXI_15/p3_v_31
     ----------------------------------------
-    Total                      7.831ns (3.962ns logic, 3.869ns route)
-                                       (50.6% logic, 49.4% route)
+    Total                     14.110ns (10.264ns logic, 3.846ns route)
+                                       (72.7% logic, 27.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -516,74 +619,75 @@ Offset:              3.011ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 10805 / 7
+  Total number of paths / destination ports: 15091 / 7
 -------------------------------------------------------------------------
-Offset:              15.535ns (Levels of Logic = 38)
-  Source:            XLXI_1/p3_height_2 (FF)
-  Destination:       VGA_R (PAD)
+Offset:              16.754ns (Levels of Logic = 39)
+  Source:            XLXI_15/p3_height_2 (FF)
+  Destination:       VGA_G (PAD)
   Source Clock:      clk rising
 
-  Data Path: XLXI_1/p3_height_2 to VGA_R
+  Data Path: XLXI_15/p3_height_2 to VGA_G
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             4   0.591   0.762  XLXI_1/p3_height_2 (XLXI_1/p3_height_2)
-     LUT1:I0->O            1   0.704   0.000  XLXI_1/Msub_vga_b_sub0004_cy<2>_rt (XLXI_1/Msub_vga_b_sub0004_cy<2>_rt)
-     MUXCY:S->O            1   0.464   0.000  XLXI_1/Msub_vga_b_sub0004_cy<2> (XLXI_1/Msub_vga_b_sub0004_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<3> (XLXI_1/Msub_vga_b_sub0004_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<4> (XLXI_1/Msub_vga_b_sub0004_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<5> (XLXI_1/Msub_vga_b_sub0004_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<6> (XLXI_1/Msub_vga_b_sub0004_cy<6>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<7> (XLXI_1/Msub_vga_b_sub0004_cy<7>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<8> (XLXI_1/Msub_vga_b_sub0004_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<9> (XLXI_1/Msub_vga_b_sub0004_cy<9>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<10> (XLXI_1/Msub_vga_b_sub0004_cy<10>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<11> (XLXI_1/Msub_vga_b_sub0004_cy<11>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<12> (XLXI_1/Msub_vga_b_sub0004_cy<12>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<13> (XLXI_1/Msub_vga_b_sub0004_cy<13>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<14> (XLXI_1/Msub_vga_b_sub0004_cy<14>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<15> (XLXI_1/Msub_vga_b_sub0004_cy<15>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<16> (XLXI_1/Msub_vga_b_sub0004_cy<16>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<17> (XLXI_1/Msub_vga_b_sub0004_cy<17>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<18> (XLXI_1/Msub_vga_b_sub0004_cy<18>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<19> (XLXI_1/Msub_vga_b_sub0004_cy<19>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<20> (XLXI_1/Msub_vga_b_sub0004_cy<20>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<21> (XLXI_1/Msub_vga_b_sub0004_cy<21>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<22> (XLXI_1/Msub_vga_b_sub0004_cy<22>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<23> (XLXI_1/Msub_vga_b_sub0004_cy<23>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<24> (XLXI_1/Msub_vga_b_sub0004_cy<24>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<25> (XLXI_1/Msub_vga_b_sub0004_cy<25>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<26> (XLXI_1/Msub_vga_b_sub0004_cy<26>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<27> (XLXI_1/Msub_vga_b_sub0004_cy<27>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Msub_vga_b_sub0004_cy<28> (XLXI_1/Msub_vga_b_sub0004_cy<28>)
-     XORCY:CI->O           1   0.804   0.424  XLXI_1/Msub_vga_b_sub0004_xor<29> (XLXI_1/vga_b_sub0004<29>)
-     LUT4:I3->O            1   0.704   0.000  XLXI_1/Mcompar_vga_b_cmp_gt0008_lut<14> (XLXI_1/Mcompar_vga_b_cmp_gt0008_lut<14>)
-     MUXCY:S->O            1   0.464   0.000  XLXI_1/Mcompar_vga_b_cmp_gt0008_cy<14> (XLXI_1/Mcompar_vga_b_cmp_gt0008_cy<14>)
-     MUXCY:CI->O           1   0.059   0.000  XLXI_1/Mcompar_vga_b_cmp_gt0008_cy<15> (XLXI_1/Mcompar_vga_b_cmp_gt0008_cy<15>)
-     MUXCY:CI->O           1   0.459   0.595  XLXI_1/Mcompar_vga_b_cmp_gt0008_cy<16> (XLXI_1/Mcompar_vga_b_cmp_gt0008_cy<16>)
-     LUT4:I0->O            1   0.704   0.455  XLXI_1/vga_b_and0003_SW1 (N12)
-     LUT4:I2->O            2   0.704   0.482  XLXI_1/vga_b_and0003 (XLXI_1/vga_b_and0003)
-     LUT3:I2->O            2   0.704   0.526  XLXI_1/vga_g111 (XLXI_1/N19)
-     LUT3:I1->O            1   0.704   0.420  XLXI_1/vga_r1 (VGA_R_OBUF)
-     OBUF:I->O                 3.272          VGA_R_OBUF (VGA_R)
+     FDE:C->Q              6   0.591   0.844  XLXI_15/p3_height_2 (XLXI_15/p3_height_2)
+     LUT1:I0->O            1   0.704   0.000  XLXI_15/Msub_vga_b_sub0004_cy<2>_rt (XLXI_15/Msub_vga_b_sub0004_cy<2>_rt)
+     MUXCY:S->O            1   0.464   0.000  XLXI_15/Msub_vga_b_sub0004_cy<2> (XLXI_15/Msub_vga_b_sub0004_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<3> (XLXI_15/Msub_vga_b_sub0004_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<4> (XLXI_15/Msub_vga_b_sub0004_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<5> (XLXI_15/Msub_vga_b_sub0004_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<6> (XLXI_15/Msub_vga_b_sub0004_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<7> (XLXI_15/Msub_vga_b_sub0004_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<8> (XLXI_15/Msub_vga_b_sub0004_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<9> (XLXI_15/Msub_vga_b_sub0004_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<10> (XLXI_15/Msub_vga_b_sub0004_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<11> (XLXI_15/Msub_vga_b_sub0004_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<12> (XLXI_15/Msub_vga_b_sub0004_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<13> (XLXI_15/Msub_vga_b_sub0004_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<14> (XLXI_15/Msub_vga_b_sub0004_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<15> (XLXI_15/Msub_vga_b_sub0004_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<16> (XLXI_15/Msub_vga_b_sub0004_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<17> (XLXI_15/Msub_vga_b_sub0004_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<18> (XLXI_15/Msub_vga_b_sub0004_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<19> (XLXI_15/Msub_vga_b_sub0004_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<20> (XLXI_15/Msub_vga_b_sub0004_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<21> (XLXI_15/Msub_vga_b_sub0004_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<22> (XLXI_15/Msub_vga_b_sub0004_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<23> (XLXI_15/Msub_vga_b_sub0004_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<24> (XLXI_15/Msub_vga_b_sub0004_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<25> (XLXI_15/Msub_vga_b_sub0004_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<26> (XLXI_15/Msub_vga_b_sub0004_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<27> (XLXI_15/Msub_vga_b_sub0004_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Msub_vga_b_sub0004_cy<28> (XLXI_15/Msub_vga_b_sub0004_cy<28>)
+     XORCY:CI->O           1   0.804   0.424  XLXI_15/Msub_vga_b_sub0004_xor<29> (XLXI_15/vga_b_sub0004<29>)
+     LUT4:I3->O            1   0.704   0.000  XLXI_15/Mcompar_vga_b_cmp_gt0008_lut<14> (XLXI_15/Mcompar_vga_b_cmp_gt0008_lut<14>)
+     MUXCY:S->O            1   0.464   0.000  XLXI_15/Mcompar_vga_b_cmp_gt0008_cy<14> (XLXI_15/Mcompar_vga_b_cmp_gt0008_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  XLXI_15/Mcompar_vga_b_cmp_gt0008_cy<15> (XLXI_15/Mcompar_vga_b_cmp_gt0008_cy<15>)
+     MUXCY:CI->O           1   0.459   0.595  XLXI_15/Mcompar_vga_b_cmp_gt0008_cy<16> (XLXI_15/Mcompar_vga_b_cmp_gt0008_cy<16>)
+     LUT4:I0->O            1   0.704   0.455  XLXI_15/vga_b_and0003_SW1 (N258)
+     LUT4:I2->O            3   0.704   0.566  XLXI_15/vga_b_and0003 (XLXI_15/vga_b_and0003)
+     LUT3:I2->O            2   0.704   0.451  XLXI_15/vga_r21 (XLXI_15/N134)
+     LUT4:I3->O            1   0.704   0.424  XLXI_15/vga_g_SW0 (N8)
+     LUT4:I3->O            1   0.704   0.420  XLXI_15/vga_g (VGA_G_OBUF)
+     OBUF:I->O                 3.272          VGA_G_OBUF (VGA_G)
     ----------------------------------------
-    Total                     15.535ns (11.871ns logic, 3.664ns route)
-                                       (76.4% logic, 23.6% route)
+    Total                     16.754ns (12.575ns logic, 4.179ns route)
+                                       (75.1% logic, 24.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'VGA_VSYNC_OBUF'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Offset:              4.368ns (Levels of Logic = 1)
-  Source:            XLXI_1/h_sync (LATCH)
+  Source:            XLXI_15/h_sync (LATCH)
   Destination:       VGA_HSYNC (PAD)
   Source Clock:      VGA_VSYNC_OBUF falling
 
-  Data Path: XLXI_1/h_sync to VGA_HSYNC
+  Data Path: XLXI_15/h_sync to VGA_HSYNC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.676   0.420  XLXI_1/h_sync (XLXI_1/h_sync)
+     LD:G->Q               1   0.676   0.420  XLXI_15/h_sync (XLXI_15/h_sync)
      OBUF:I->O                 3.272          VGA_HSYNC_OBUF (VGA_HSYNC)
     ----------------------------------------
     Total                      4.368ns (3.948ns logic, 0.420ns route)
@@ -592,14 +696,14 @@ Offset:              4.368ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.54 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.59 secs
  
 --> 
 
-Total memory usage is 4548456 kilobytes
+Total memory usage is 4548412 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   24 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 
