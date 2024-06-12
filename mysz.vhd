@@ -39,7 +39,9 @@ entity mysz is
 		B1_Status : in std_logic_vector(7 downto 0);
 		B2_X : in std_logic_vector(7 downto 0);
 		B3_Y: in std_logic_vector(7 downto 0);
-		DataRdy : in STD_logic
+		DataRdy : in STD_logic;
+		
+		mReset : in STD_LOGIC
 		);
 end mysz;
 
@@ -50,8 +52,8 @@ architecture Behavioral of mysz is
 	signal dy : signed(7 downto 0) := signed(B3_Y);
 	signal x : signed(10 downto 0);
 	signal y : signed(10 downto 0);
-	signal x_c : signed(10 downto 0) := "00000011110";
-	signal y_c : signed(10 downto 0) := "00100011110";
+	signal x_c : signed(10 downto 0) := "00001010000";
+	signal y_c : signed(10 downto 0) := "00001010000";
 
 
 begin
@@ -62,23 +64,31 @@ begin
 
 	
 	
-process(clk, DataRdy, B1_Status, B2_X, B3_Y)
+process(clk, DataRdy, B1_Status, B2_X, B3_Y, mReset)
     begin
-	 if rising_edge(clk) and DataRdy = '1' then		
-	if x_c > 780 then
-			x_c <= "01100001100";
-	elsif x_c < 60 then
-			x_c <= "00000111100";
-		else 
-			x_c <= x_c + dx;
-		end if;
-	if y_c > 580 then
-			y_c <= "01001000100";
-	elsif y_c < 20 then
-			y_c <= "00000010100";
-		else 
-			y_c <= y_c - dy;
-		end if;	 end if;
+	 if rising_edge(clk) then	
+	 if mReset='1' or x_c > 790 or x_c < 70 or y_c > 590 or y_c < 30 then
+		x_c <= "00001010000";
+		y_c <= "00001010000";
+	elsif DataRdy = '1' then
+		x_c <= x_c + dx;
+		y_c <= y_c - dy;
+	 end if;
+	 end if;
+	--if x_c > 780 then
+	--		x_c <= "01100001100";
+	--elsif x_c < 60 then
+	--		x_c <= "00000111100";
+	--	else 
+	--		x_c <= x_c + dx;
+	--	end if;
+	--if y_c > 580 then
+	--		y_c <= "01001000100";
+	--elsif y_c < 20 then
+	--		y_c <= "00000010100";
+	--	else 
+	--		y_c <= y_c - dy;
+	--	end if;	 end if;
 			
  end process;
  
