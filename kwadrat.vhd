@@ -62,13 +62,19 @@ architecture Behavioral of kwadrat is
 	 signal win : STD_LOGIC := '0';
 	 
 	 signal lvl : integer := 0;
+	 
+	 signal x_counter : integer range 700 to 780 := 700;
+	 signal y_counter : integer range 50 to 550 := 50;
+	 signal dimWin : integer := 10;
+	 signal xWin : integer := 780;
+	 signal yWin : integer := 570;
 
 begin
 	mReset<=ifReset;
 	 c_pos_x <= signed(pos_x);
 	 c_pos_y <= signed(pos_y);
 
-process(clk)
+process(clk,h_counter, v_counter)
     begin
         if rising_edge(clk) then
             if h_counter = 1039 then
@@ -92,23 +98,27 @@ process(clk)
 
     process(h_counter, v_counter)
     begin
-        if v_counter < 0 or v_counter >= V_FRONT_PORCH + V_ACTIVE + V_BACK_PORCH then
+        if v_counter >= 600 + 37 and v_counter < 600 + 37 + 6 then
             v_sync <= '0'; 
         else
             v_sync <= '1'; 
-            if h_counter < 0 or h_counter >= H_FRONT_PORCH + H_ACTIVE + H_BACK_PORCH then
+			end if;
+            if  h_counter >= 800 + 56 and h_counter < 800 + 56 + 120 then
                 h_sync <= '0';
             else
                 h_sync <= '1';
-            end if;
+            
         end if;
+		  
+		  --if v_sync = '1' and h_sync = '1' then
+		  --if(((h_counter >= 0) and (h_counter < 800)) and ((v_counter >= 0)  and (v_counter < 600)))then
 		  
         if v_counter > V_ACTIVE or v_counter < V_BACK_PORCH or h_counter > H_ACTIVE or h_counter < H_BACK_PORCH then -- czarny
 		    vga_r <= '0';
             vga_g <= '0';
             vga_b <= '0';
 
-				elsif v_counter > 560 and v_counter < 580 and h_counter > 770  and h_counter < 790 then -- punkt zwyciestwa
+				elsif v_counter > yWin - dimWin and v_counter < yWin + dimWin and h_counter > xWin - dimWin  and h_counter < xWin + dimWin then -- punkt zwyciestwa
 						vga_r <='0'; 
 						vga_g <='1'; 
 						vga_b <='0'; 
@@ -149,6 +159,11 @@ process(clk)
 						
 						end if;
 				end if;
+				--else
+				---vga_r <= '0';
+            --vga_g <= '0';
+            --vga_b <= '0';
+			--end if;
 				
 
     end process;
@@ -200,13 +215,15 @@ process(clk)
 				if c_pos_y+10 >= p3_y-p3_height and c_pos_y-10 <= p3_y+p3_height then
 					ifReset <= '1';
 				end if;
-			elsif c_pos_x+10 >= 770 and c_pos_x-10 <= 790 then	--wygrana
-				if c_pos_y+10 >= 560 and c_pos_y-10 <= 580 then
+			elsif c_pos_x+10 >= xWin - dimWin and c_pos_x-10 <= xWin + dimWin then	--wygrana
+				if c_pos_y+10 >= yWin - dimWin and c_pos_y-10 <= yWin + dimWin then
 					ifReset <= '1';		
 					win <= '1';
 				end if;
 			else 
 				if win = '1' then
+					xWin <= x_counter;
+					yWin <= y_counter;
 					if lvl = 3 then
 						lvl<=0;
 					else
@@ -230,29 +247,22 @@ process(clk)
 
 	end process;
 	
-	--process(clk, c_pos_x, c_pos_y, p1_height, p2_height, p3_height) --reset pozycji po zderzeniu z przeszkodą
-	--begin
-	--	if rising_edge(clk) then
-
-	--end process;
-	
-	
-	
-	
-	--process(clk, c_pos_x, c_pos_y)
-    --begin
-	--	if rising_edge(clk) then
-	--		if c_pos_x+10 >= 770 and c_pos_x-10 <= 790 then
-	--			if c_pos_y+10 >= 560 and c_pos_y-10 <= 580 then
-	--				ifReset <= '1';
-	--			
-	--			end if;
-	--		--else
+	process(clk)
+    begin
+        if rising_edge(clk) then
+				if x_counter=779 then
+					x_counter<=700;
+				else
+					x_counter <= x_counter + 1;
+				end if;
 				
-	--	end if;
-	--end process;
+				if y_counter=549 then
+					y_counter<=50;
+				else
+					y_counter <= y_counter + 1;
+				end if;
+        end if;
+ end process;
 	
-
-	--ifReset<='0';
 end Behavioral;
 
